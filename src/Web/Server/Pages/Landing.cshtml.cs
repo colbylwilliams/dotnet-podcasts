@@ -20,7 +20,7 @@ namespace Podcast.Server.Pages
             var shows = await _podcastService.GetShows(50, null);
             FeaturedShows = shows?.Where(s => s.IsFeatured).ToArray();
             
-            foreach(var show in shows.Take(10))
+            foreach(var show in FeaturedShows)
             {
                 // check if subscribed
             }
