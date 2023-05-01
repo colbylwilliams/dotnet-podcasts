@@ -12,6 +12,7 @@ public static class CategoriesApi
     {
         var categories = await podcastDbContext.Categories.Select(x => new CategoryDto(x.Id, x.Genre))
             .ToListAsync(cancellationToken);
+        await Task.Delay(TimeSpan.FromSeconds(5));
         return TypedResults.Ok(categories);
     }
 }

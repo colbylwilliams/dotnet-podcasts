@@ -34,6 +34,8 @@ public static class ShowsApi
             .Select(x => new ShowDto(x))
             .ToListAsync(cancellationToken);
 
+        await Task.Delay(TimeSpan.FromSeconds(5));
+
         List<ShowDto> showsWithValidLinks = Task.WhenAll(shows.Select(async show => await showClient.CheckLink(show.Link) ? show : null)).Result.Where(show => show is not null).ToList()!;
         return TypedResults.Ok(showsWithValidLinks);
     }
@@ -48,6 +50,7 @@ public static class ShowsApi
             .Where(x => x.Id == id)
             .Select(show => new ShowDto(show))
             .FirstOrDefaultAsync(cancellationToken);
+        await Task.Delay(TimeSpan.FromSeconds(5));
         return show == null ? TypedResults.NotFound() : TypedResults.Ok(show);
     }
 }

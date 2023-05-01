@@ -14,6 +14,7 @@ public static class EpisodesApi
             .Where(episode => episode.Id == id)
             .Select(episode => new EpisodeDto(episode))
             .FirstAsync(cancellationToken);
+        await Task.Delay(TimeSpan.FromSeconds(5));
         return TypedResults.Ok(episode);
     }
 }
