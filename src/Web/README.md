@@ -59,6 +59,7 @@ The *.sln* is located in the root path of the repository and its name is [Podcas
 ### Projects
 
 This solution has five projects:
+
 - **Podcast.Client**: Blazor Web Assembly project.
 - **Podcast.Components**:: Razor Class Library project with shared components.
 - **Podcast.Pages**: Razor Class Library project with shared pages.
