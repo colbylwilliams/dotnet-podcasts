@@ -40,7 +40,7 @@ The variables to be configured are the following ones:
     "ListenTogetherHub": "<LISTEN_TOGETHER_HUB_URL>"
 }
 ```
-
+ 
 ## Deploy using GitHub Actions
 
 To configure the Github Action it is necessary to create an environment called `prod` and set up the following secrets. (Consider that the action will create these resources automatically, so resource names need to be unique). [Learn how to create an environment.](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
