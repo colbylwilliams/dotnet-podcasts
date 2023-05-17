@@ -39,7 +39,7 @@ The variables to be configured are the following ones:
     },
     "ListenTogetherHub": "<LISTEN_TOGETHER_HUB_URL>"
 }
-```
+``` 
 
 ## Deploy using GitHub Actions
 
