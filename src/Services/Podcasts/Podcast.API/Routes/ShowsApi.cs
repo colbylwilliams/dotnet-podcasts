@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.EntityFrameworkCore;
-using Podcast.API.Models;
-using Podcast.Infrastructure.Data;
-using Podcast.Infrastructure.Http;
+﻿using Podcast.Infrastructure.Http;
 
 namespace Podcast.API.Routes;
 
@@ -51,3 +47,7 @@ public static class ShowsApi
         return show == null ? TypedResults.NotFound() : TypedResults.Ok(show);
     }
 }
+
+
+
+
