@@ -15,7 +15,7 @@
     <link rel="preload" href="fonts/SegoeUISemibold.woff" as="font" type="font/woff" crossorigin />
     <link rel="preload" href="fonts/SegoeUIBold.woff" as="font" type="font/woff" crossorigin />
     <link rel="preload" href="css/styles.css" as="style" />
-    <link rel="preload" href="images/hero_landing_image.jpg" as="image" />
+    <link rel="preload" href="images/hero_landing_image_dark.jpg" as="image" />
     <link rel="preload" href="images/download-app_store.png" as="image" />
     <link rel="preload" href="images/download-google_play.png" as="image" />
     <link rel="preload" href="images/download-microsoft.png" as="image" />
@@ -172,6 +172,9 @@
                     </svg>
                 </li>
                 <li>
+                    <a href="#features" onclick="removeClass()" title="Live Streaming">Live Streaming</a>
+                </li>
+                <li>
                     <a href="#features" onclick="removeClass()" title="Features">Features</a>
                 </li>
                 <li>
@@ -294,13 +297,13 @@
             <div class="section-grid featured-grid">
                 @foreach (var podcast in Model.FeaturedShows ?? new Show[] { })
                 {
-                    <div class="featured-item">
-                        <picture class="featured-item__picture">
-                            <img src="@podcast.Image" alt="@podcast.Title" loading="lazy" />
-                        </picture>
-                        <h3 class="featured-item__title">@podcast.Title</h3>
-                        <p class="featured-item__author">@podcast.Author</p>
-                    </div>
+                        <div class="featured-item">
+                            <picture class="featured-item__picture">
+                                <img src="@podcast.Image" alt="@podcast.Title" loading="lazy" />
+                            </picture>
+                            <h3 class="featured-item__title">@podcast.Title</h3>
+                            <p class="featured-item__author">@podcast.Author</p>
+                        </div>
                 }
             </div>
             <a href="/discover" class="buttonApp primary" title="Discover more">
@@ -362,10 +365,10 @@
                     <b>.NET Podcasts is powered by .NET &amp; hosted in Azure</b>
                     In addition to the native mobile and desktop apps powered by
                     <a href="https://aka.ms/dotnet-maui-landing" target="_blank">.NET MAUI</a>
-                    and web app powered by <a href="https://blazor.net">Blazor</a>, 
-                    .NET Podcasts runs powerful backend Web APIs, service workers, 
+                    and web app powered by <a href="https://blazor.net">Blazor</a>,
+                    .NET Podcasts runs powerful backend Web APIs, service workers,
                     and SignalR hubs powered by <a href="https://dotnet.microsoft.com/apps/aspnet/apis" target="_blank">ASP.NET Core</a>.
-                    This is all brought together with Azure and microservices powered 
+                    This is all brought together with Azure and microservices powered
                     by <a href="https://azure.microsoft.com/services/container-apps">Azure Container Apps</a>.
                 </p>
             </div>
@@ -398,3 +401,5 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
+
