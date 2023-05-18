@@ -186,7 +186,7 @@ header.sticky .close-menu-burger .menu-burger__icon * {
 
 .section__hero {
     align-items: center;
-    background: url("../images/hero_landing_image.jpg") no-repeat center bottom transparent;
+    background: url("../images/hero_landing_image_dark.jpg") no-repeat center bottom transparent;
     background-size: cover;
     color: var(--c-neutral-white);
     display: flex;
