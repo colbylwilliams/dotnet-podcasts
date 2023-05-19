@@ -34,7 +34,7 @@ header.sticky {
     padding-top: 24px;
 }
 
-header.sticky:before {
+/* header.sticky:before {
     animation: headerSticky 0.3s ease-out forwards;
 }
 
@@ -46,7 +46,7 @@ header.sticky:before {
     to {
         height: 100%;
     }
-}
+} */
 
 header.sticky .menu-burger__icon path {
     fill: var(--c-primary);
@@ -161,6 +161,7 @@ header.sticky .close-menu-burger .menu-burger__icon * {
     cursor: pointer;
 }
 
+
 .buttonApp.primary {
     background: var(--c-primary);
     background: var(--gradient-final);
@@ -186,15 +187,15 @@ header.sticky .close-menu-burger .menu-burger__icon * {
 
 .section__hero {
     align-items: center;
-    background: url("../images/hero_landing_image_dark.jpg") no-repeat center bottom transparent;
+    background: url("../images/hero_landing_option.jpg") no-repeat center bottom transparent;
     background-size: cover;
-    color: var(--c-neutral-white);
+    /* color: var(--c-neutral-white); */
+    color: var(--c-neutral-dark);
     display: flex;
     height: 950px;
     padding-bottom: 80px;
     padding-top: 80px;
 }
-
 
 
 

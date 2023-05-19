@@ -3,11 +3,11 @@ const onScroll = () => {
     const header = document.querySelector('#header');
     if (!header) return;
 
-    if (scroll > 50) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+    // if (scroll > 50) {
+    //     header.classList.add("sticky");
+    // } else {
+    //     header.classList.remove("sticky");
+    // }
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
