@@ -34,7 +34,7 @@ header.sticky {
     padding-top: 24px;
 }
 
-/* header.sticky:before {
+header.sticky:before {
     animation: headerSticky 0.3s ease-out forwards;
 }
 
@@ -46,7 +46,7 @@ header.sticky {
     to {
         height: 100%;
     }
-} */
+}
 
 header.sticky .menu-burger__icon path {
     fill: var(--c-primary);
