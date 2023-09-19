@@ -1,8 +1,8 @@
 suffix: ade
 prod-environment-name: contoso-radio-podcasts
-tenant: 72f988bf-86f1-41af-91ab-2d7cd011db47
-subscription: 090cfcd9-42da-4b2b-a3d3-0fa4b90babf5
-devcenter: Contoso-Radio
+tenant: 16b3c013-d300-468d-ac64-7eda0820b6d3
+subscription: d58e75b5-9605-4214-b14c-dbff17264b3e
+devcenter: contoso-dev-center
 project: Podcast-App
 catalog: Environments
 definition: Podcast
