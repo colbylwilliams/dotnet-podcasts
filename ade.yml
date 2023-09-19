@@ -3,6 +3,6 @@ prod-environment-name: contoso-radio-podcasts
 tenant: 16b3c013-d300-468d-ac64-7eda0820b6d3
 subscription: d58e75b5-9605-4214-b14c-dbff17264b3e
 devcenter: contoso-dev-center
-project: Podcast-App
+project: podcast-NET-project
 catalog: Environments
 definition: Podcast
